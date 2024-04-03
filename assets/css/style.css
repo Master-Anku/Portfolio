@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color:hsl(304, 85%, 66%);
+    --text-color:#191818;
+    --one-color:rgb(10, 230, 223);
+    --two-color:hsl(163, 13%, 90%);
+    --three-color:gold;
+}
+
+body {
+    background-color:var(--two-color);
+    color:var(--text-color);
+}
+header {
+    padding: 15px 40px;
+    background-color: var(--bg-color);
+}
+header h1 {
+    background-color: var(--three-color);
+    color:var(--text-color);
+    margin: 0; 
+    font-size: 20px;
+    display: inline; 
+    border: 3px solid rgb(184, 54, 177);
+    border-radius: 45px;
+    padding: 0 20px;
+    
+}
+
+ 
+nav {
+    float: right;
+}
+nav ul li {
+    display: inline;
+    border: 3px solid rgb(184, 54, 177);
+    border-radius: 45px;
+    background-color: var(--three-color);
+    margin: 0 20px;
+
+}
+nav ul li a {
+    margin: 5px 30px;
+    background-color: var(--three-color);
+}
+/* hero start */
+ .hero {
+    background-image: url(../image/color.png);
+    background-size: cover;
+    background-position: bottom;
+    height: 400px; 
+    position: relative;
+} 
+.hero h2 {
+    color: var(--one-color);
+    margin-left: 50px;
+    padding: 100px 100px;
+}
+
+.hero h3 {
+    color: var(--one-color);
+}
+/* hero end */
+article {
+    padding: 20px;
+    position: absolute;
+    width: 500px;
+    bottom: 120px;
+    right: 140px;
+    font-size: 30px;
+}
+img {
+    width: 200px;
+}
+section p::first-letter {
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px gold;
+    color: rgb(17, 221, 221);
+    float: left;
+
+}
+div.content {
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 20px;
+}
+div.contact {
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 20px;
+}
+
