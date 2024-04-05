@@ -11,10 +11,11 @@
     --one-color:rgb(10, 230, 223);
     --two-color:hsl(163, 13%, 90%);
     --three-color:gold;
+    --four-color:rgb(211, 238, 235);
 }
 
 body {
-    background-color:var(--two-color);
+    background-color:var(--four-color);
     color:var(--text-color);
 }
 header {
@@ -51,20 +52,24 @@ nav ul li a {
 }
 /* hero start */
  .hero {
-    background-image: url(../image/color.png);
+    /* background-image: url(../image/color.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom; */
     height: 400px; 
     position: relative;
+    margin-right: 40%; 
+   
+
+    
 } 
 .hero h2 {
-    color: var(--one-color);
+    color: var(--bg-color);
     margin-left: 50px;
     padding: 100px 100px;
 }
 
 .hero h3 {
-    color: var(--one-color);
+    color: var(--bg-color);
 }
 /* hero end */
 article {
@@ -77,6 +82,8 @@ article {
 }
 img {
     width: 200px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
 }
 section p::first-letter {
     font-weight: bold;
@@ -91,9 +98,17 @@ div.content {
     padding: 20px;
     font-size: 20px;
 }
+div.content span {
+    color: blue;
+}
+
+div.contact h2 {
+    padding-bottom: 20px;
+}
 div.contact {
     margin-left: 50px;
     padding: 20px;
     font-size: 20px;
+
 }
 
