@@ -8,22 +8,21 @@
 :root {
     --bg-color:hsl(304, 85%, 66%);
     --text-color:#191818;
-    --one-color:rgb(10, 230, 223);
-    --two-color:hsl(163, 13%, 90%);
+    --one-color: rgb(147, 2, 155);
+    --two-color:hsl(200, 90%, 50%);
     --three-color:gold;
     --four-color:rgb(211, 238, 235);
 }
 
 body {
     background-color:var(--four-color);
-    color:var(--text-color);
 }
 .container {
     width: 1280px;
     margin: 0 auto;
 }
 header {
-    padding: 15px 40px;
+    padding: 20px 40px;
     background-color: var(--bg-color);
 } 
 header h1 {
@@ -34,8 +33,7 @@ header h1 {
     display: inline; 
     border: 3px solid rgb(184, 54, 177);
     border-radius: 45px;
-    padding: 0 20px;
-    
+    padding: 0 20px;  
 }
 
  
@@ -54,33 +52,18 @@ nav ul li a {
     margin: 5px 30px;
     background-color: var(--three-color);
 }
-/* hero start */
- .hero {
-    /* background-image: url(../image/color.png);
-    background-size: cover;
-    background-position: bottom; */
-    height: 250px; 
-    position: relative;
-    /*margin-right: 40%;*/   
-} 
+
 .grid  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-.hero h2 {
+.grid h2 {
     color: var(--bg-color);
-    /* margin-left: 50px;
-    padding: 100px 100px; */
 }
 
-/* hero end */
 article {
     padding: 20px;
-   /* position: absolute;
-    width: 500px;
-    bottom: 120px;
-    right: 140px;*/
     font-size: 30px;
 }
 img {
@@ -88,44 +71,48 @@ img {
     border: 2px solid greenyellow;
     border-radius: 50%;
 }
-/* section p::first-letter {
-    font-weight: bold;
-    font-size: 50px;
-    text-shadow: 2px 2px 2px gold;
-    color: rgb(17, 221, 221);
-    float: left;
 
-} */
 div.content {
-    /* margin-left: 50px;
-    padding: 20px; */
     font-size: 20px;
 }
 div.content h2 {
     margin-bottom: 20px;
 }
-div.content span {
-    color: blue;
-}
 
-div.contact h2 {
-    margin-bottom: 20px;
-}
 div.contact {
     margin-top: 50px;
     font-size: 20px;
 
 }
 
+div.contact h2 {
+    margin-bottom: 20px;
+}
+
 footer {
-    background-color: rgb(147, 2, 155);
+    background-color: var(--one-color);
     padding: 20px;
 }
 footer h2 {
     text-align: center;
-    color: rgb(211, 211, 238);
+    color: var(--two-color);
 }
 
 span {
-    color: rgb(230, 241, 12);
+    color:var(--three-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER  */
+@media screen and (max-width: 980px){
+    
+}
+
+/*  MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+}
+
+/*  MEDIA QUERY FOR MOBILE PHONES AND SMALLER  */
+@media  screen and (max-width: 575px) {
+    
 }
